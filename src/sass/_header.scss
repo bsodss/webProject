@@ -1,0 +1,35 @@
+.header {
+    padding: 22px 0;
+
+    &-wrap {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.menu {
+    &-links {
+        display: flex;
+    }
+
+    &-link {
+        padding: 8px 15px;
+        transition: all 0.3s ease;
+        a {
+            font-weight: 700;
+            font-size: 14px;
+            color: #868686;
+            text-transform: uppercase;
+            transition: all 0.3s ease;
+        }
+    }
+
+    &-link:hover {
+        background-color: #ffbb42;
+        border-radius: 5px;
+        a {
+            color: #fff;
+        }
+    }
+}

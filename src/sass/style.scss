@@ -1,0 +1,38 @@
+body {
+    font-family: "Lato", sans-serif;
+}
+
+.button {
+    padding: 18px 43px;
+    color: #ffffff;
+    font-size: 14px;
+    border: none;
+    background-color: #ffbb42;
+    text-transform: uppercase;
+    text-align: center;
+    border-radius: 5px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+li {
+    text-decoration: none;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    width: 1160px;
+    margin: 0 auto;
+}
+
+@import "header";
+@import "main";
+@import "services";
+@import "about";
+@import "price";
