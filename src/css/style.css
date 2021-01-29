@@ -202,34 +202,51 @@ a {
   flex-direction: column;
   align-items: center;
   width: 33%;
-  border: 1px solid black;
+  border: 1px solid #ccd5df;
+  border-radius: 4px;
   min-height: 442px;
   color: #818b95;
-  transition: 0.4s all ease-in; }
+  transition: all 1.2s ease-in; }
+  .price-card__price {
+    margin-top: 30px;
+    color: #818b95;
+    transition: all 1.2s ease-in; }
   .price-card__title {
     font-size: 25px;
     text-transform: uppercase;
     font-weight: 300; }
-  .price-card__price {
-    margin-top: 30px; }
-
-.price-card:hover {
-  background-color: #709dca;
-  color: #fff;
-  transform: scale(1.115); }
-
-.price-main {
-  text-align: center;
-  font-size: 60px;
-  font-weight: 700;
-  color: #ffbb42;
-  text-transform: uppercase; }
+  .price-card__btn {
+    padding: 14px 25px; }
+  .price-card:hover {
+    background-color: #709dca;
+    color: #fff;
+    transform: scale(1.115); }
+  .price-card:hover .price-card__price > * {
+    color: #fff;
+    transform: scale(1); }
 
 .price-per {
   text-transform: uppercase;
   color: #818b95;
   font-size: 15px;
   margin-top: 9px;
-  font-weight: 300; }
+  font-weight: 300;
+  transition: 1.2s all ease-in; }
+
+.price-main {
+  text-align: center;
+  font-size: 60px;
+  transition: 1.2s all ease-in;
+  font-weight: 700;
+  color: #ffbb42;
+  text-transform: uppercase;
+  position: relative; }
+  .price-main::before {
+    content: "$";
+    font-size: 30px;
+    position: absolute;
+    font-weight: 900;
+    top: 0;
+    left: -5px; }
 
 /*# sourceMappingURL=style.css.map */
