@@ -33,11 +33,10 @@
     width: 33%;
     border: 1px solid black;
     min-height: 442px;
-
+    color: #818b95;
     transition: 0.4s all ease-in;
 
     &__title {
-        color: #818b95;
         font-size: 25px;
         text-transform: uppercase;
         font-weight: 300;
@@ -49,7 +48,9 @@
 }
 
 .price-card:hover {
-    transform: scale(1.1);
+    background-color: #709dca;
+    color: #fff;
+    transform: scale(1.115);
 }
 
 .price-main {
