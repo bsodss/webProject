@@ -301,7 +301,8 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    align-items: center; }
+    align-items: center;
+    position: relative; }
     .steps-card__image {
       width: 80px;
       height: 80px; }
@@ -324,5 +325,19 @@ a {
       font-weight: 400;
       color: #7b7b7b;
       margin-top: 28px; }
+    .steps-card__topline {
+      position: absolute;
+      top: -12%;
+      left: 78%; }
+      .steps-card__topline img {
+        width: 128px;
+        height: 33px; }
+    .steps-card__bottomline {
+      position: absolute;
+      top: 20%;
+      left: 78%; }
+      .steps-card__bottomline img {
+        width: 128px;
+        height: 33px; }
 
 /*# sourceMappingURL=style.css.map */

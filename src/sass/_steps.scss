@@ -62,5 +62,29 @@
             color: #7b7b7b;
             margin-top: 28px;
         }
+
+        position: relative;
+
+        &__topline {
+            position: absolute;
+            img {
+                width: 128px;
+                height: 33px;
+            }
+
+            top: -12%;
+            left: 78%;
+        }
+
+        &__bottomline {
+            position: absolute;
+            img {
+                width: 128px;
+                height: 33px;
+            }
+
+            top: 20%;
+            left: 78%;
+        }
     }
 }
