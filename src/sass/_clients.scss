@@ -1,0 +1,89 @@
+.clients {
+    padding: 140px 0 160px 0;
+    min-height: 908px;
+    background-color: #ffc155;
+    text-align: center;
+
+    &-text {
+        &__title {
+            font-size: 29px;
+            font-weight: 900;
+            text-transform: uppercase;
+            color: #fff;
+        }
+        &__subtitle {
+            font-size: 16px;
+            font-weight: 300;
+            color: #fff;
+            margin-top: 5px;
+        }
+    }
+
+    &-cards {
+        width: 100%;
+        margin-top: 58px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    &-main__text {
+        color: #7b7b7b;
+        width: 345px;
+        text-align: left;
+        margin-top: 5px;
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 24px;
+        position: relative;
+        &::before {
+            content: "“";
+            font-family: "Brandon Grotesque";
+            color: #7b7b7b;
+            font-size: 24px;
+            font-weight: 700;
+            position: absolute;
+            top: -4px;
+            left: -18px;
+        }
+
+        &::after {
+            content: "“";
+            font-family: "Brandon Grotesque";
+            color: #7b7b7b;
+            transform: scale(-1, -1);
+            font-size: 24px;
+            font-weight: 700;
+            position: absolute;
+            bottom: 0;
+            left: 12%;
+        }
+    }
+
+    &-author {
+        margin-top: 25px;
+        font-size: 14px;
+        text-transform: uppercase;
+        color: #99a9ae;
+        font-weight: 700;
+        &__name {
+            color: #f6772c;
+        }
+    }
+}
+
+.client-card {
+    min-height: 240px;
+    display: flex;
+    flex-basis: 48.7%;
+    justify-content: space-between;
+    align-content: flex-start;
+    margin-top: 18px;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 43px 22px 45px 30px;
+
+    &__text {
+        text-align: left;
+    }
+}
