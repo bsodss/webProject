@@ -1,0 +1,116 @@
+.news {
+    padding: 154px 0 100px 0;
+    text-align: center;
+
+    &-text {
+        &__title {
+            color: #394b50;
+            text-transform: uppercase;
+            font-size: 28px;
+            font-weight: 900;
+        }
+        &__subtitle {
+            margin-top: 5px;
+            font-size: 16px;
+            color: #394b50;
+            font-weight: 300;
+        }
+    }
+
+    &-form {
+        display: flex;
+        justify-content: center;
+        &__input {
+            border: 1px solid #cbcbcb;
+            padding-top: 13px;
+            padding-bottom: 13px;
+        }
+
+        &__name {
+            width: 300px;
+        }
+        &__mail {
+            width: 380px;
+        }
+
+        &__btn {
+            border-radius: 2px;
+            padding: 14px 53px;
+        }
+    }
+
+    &-contact {
+        margin-top: 53px;
+        min-height: 549px;
+        display: flex;
+        justify-content: center;
+        background: url("../img/contacts/map.png") center center/cover no-repeat;
+    }
+}
+
+.address {
+    margin-top: 40px;
+    width: 280px;
+    height: 292px;
+    background-color: #394b50;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    &-title {
+        font-weight: 400;
+        text-transform: uppercase;
+        color: #fff;
+    }
+
+    &-info {
+        margin-top: 18px;
+        color: #aeb7ba;
+        font-size: 13px;
+        line-height: 24px;
+    }
+
+    &-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        color: #fff;
+        width: 142px;
+    }
+
+    &::after {
+        content: "";
+        border: 16px solid transparent;
+        border-top-color: #394b50;
+        position: absolute;
+        bottom: -10%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    &-logo {
+        position: absolute;
+        bottom: -24%;
+    }
+}
+
+.mail-span {
+    color: #ffbb42;
+}
+
+.news-wrapper {
+    position: relative;
+    &::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 1px;
+        background-color: #e3e7ec;
+        left: 0;
+        bottom: -57px;
+    }
+}
